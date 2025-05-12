@@ -1,0 +1,18 @@
+<!-- feedback-app/views/feedback.tt -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DuckDuckGo Feedback</title>
+</head>
+<body>
+  <h1>Submit Feedback</h1>
+  [% IF error %]
+    <p style="color:red;">[% error %]</p>
+  [% END %]
+  <form method="post" action="/">
+    <textarea name="comment" rows="5" cols="60" placeholder="Your feedback...">[% comment || '' %]</textarea><br>
+    <button type="submit">Send Feedback</button>
+  </form>
+</body>
+</html>

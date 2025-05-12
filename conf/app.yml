@@ -1,0 +1,9 @@
+appname: FeedbackApp
+template: "template_toolkit"
+engines:
+  template_toolkit:
+    start_tag: '[%'
+    end_tag:   '%]'
+logger: "console"
+log:    "core"
+startup_info: true
